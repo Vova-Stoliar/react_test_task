@@ -1,0 +1,54 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "standard-with-typescript",
+        "airbnb",
+        "airbnb-typescript",
+        "airbnb/hooks",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": "./tsconfig.json",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "plugins": ["react", "@typescript-eslint", "prettier"],
+    "rules": {
+        "react/react-in-jsx-scope": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "import/prefer-default-export": "off",
+        "react/function-component-definition": [
+            2,
+            { "namedComponents": "arrow-function", "unnamedComponents": "arrow-function" }
+        ],
+        "react/button-has-type": "off",
+        "react/jsx-props-no-spreading": [
+            2,
+            {
+                "html": "ignore"
+            }
+        ],
+        "import/extensions": "off",
+        "@typescript-eslint/no-floating-promises": [0, { "ignoreVoid": true, "ignoreIIFE": false }],
+        "@typescript-eslint/strict-boolean-expressions": "off",
+        "jsx-a11y/label-has-associated-control": [0, { "assert": "either" }],
+        "@typescript-eslint/restrict-template-expressions": "off",
+        "@typescript-eslint/no-misused-promises": [
+            0,
+            {
+                "checksVoidReturn": {
+                    "arguments": false,
+                    "attributes": false
+                }
+            }
+        ]
+    }
+}

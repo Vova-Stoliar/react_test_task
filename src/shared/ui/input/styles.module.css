@@ -1,0 +1,21 @@
+.input {
+    display: block;
+    width: 100%;
+    padding: 7px 11px;
+    border: 1px solid #c0c0c0;
+
+    color: #575757;
+    font-size: 14px;
+
+    border-radius: 6px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.input:focus {
+    border-color: #3498ff;
+    outline: 3px solid rgba(52, 152, 255, 0.25);
+}
+
+.input:hover {
+    border-color: #3498ff;
+}
